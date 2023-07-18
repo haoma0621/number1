@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{margin: 0;
+            height:100px;
+            background-color: beige;}
+        *{ border:1px
+             solid black;}
+        .flex{display: flex;}
+        .BaiSe{background-color: white;}
+        .flex1{flex: 1;}
+        .one{ flex-direction: column;}
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body class="flex">
+    <!-- 侧边栏 -->
+    <div style="width: 200px; height: 640px; " class=" flex one BaiSe">
+    <!--侧位栏  -->
+    <div class="flex one BaiSe" style="height: 140px;"></div>
+    <!--侧位区  -->
+    <div  class="flex one BaiSe" style="height: 500px;"></div> 
+  </div>
+
+    <!-- 主区域 -->
+    <div class="flex1 flex one">
+    <!--头部栏  -->
+    <div style="height:80px" class="BaiSe "></div>
+    <!-- 内容区 -->
+    <div class="flex1 flex">
+    <!-- 左区 -->
+    <div style="flex:3" class="one flex mg8 BaiSe">
+    <!-- 数据区 -->
+    <div class="flex BaiSe">
+    <!-- 数据块 -->
+        <div style="height: 100px;" class="flex1 BaiSe mgr8"></div>
+        <div style="height: 100px;" class="flex1 BaiSe mgr8"></div>
+        <div style="height: 100px;" class="flex1 BaiSe mgr8"></div>
+        <div style="height: 100px;" class="flex1 BaiSe"></div>
+    </div>
+    <!-- 列表区 -->
+    <div class="flex one BaiSe">
+    <!-- 列表项 -->
+    <div style="height: 160px" class="BaiSe mgt8"></div>
+    <div style="height: 160px" class="BaiSe mgt8"></div> 
+    <div style="height: 160px" class="BaiSe mgt8"></div>
+    </div> 
+    </div>
+    <!-- 右区 -->
+    <div style="flex:1" class="one flex mgr8 mgt8 BaiSe">
+    <!-- 提示区 -->
+    <div style="height: 150px;" class="BaiSe"></div>
+    <!-- 信息区 -->
+    <div style="height: 300px;" class="BaiSe mgt8"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>
